@@ -16,6 +16,3 @@ def write_book(Dimensions, Path):
 	for Dimension in Dimensions:
 		ws.append(Dimension)
 	wb.save(Path + "/BookDimensions.xlsx")
-
-
-
