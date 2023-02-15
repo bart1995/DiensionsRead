@@ -5,7 +5,7 @@ import RecDB
 def main():
 	# Подключаем библиотеки Компас API
 	Module7, KompasDocument2D = СountDim.plug_kompas()
-	# Считываем размеры
+	# Считываем размеры в активном документе компас
 	Dimensions = СountDim.dimensions_read(Module7, KompasDocument2D)
 	# Вызываем окно для указания пути сохранения excel-файла
 	PathXLXS = RecEx.path_window_xlsx()
