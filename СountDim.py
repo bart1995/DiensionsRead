@@ -40,12 +40,9 @@ def dimensions_read(Module7, KompasDocument2D):
 			MinVal = ValObj.NominalValue + ValObj.LowDeviationValue
 			MaxVal = ValObj.NominalValue + ValObj.HighDeviationValue
 			DimensionRead.append((	Number, 
-									DimensionType,  	
-									float("{0:.2f}".format(NomVal)), 
-									float("{0:.2f}".format(MinVal)), 
-									float("{0:.2f}".format(MaxVal))
-									))
+						DimensionType,  	
+						float("{0:.2f}".format(NomVal)), 
+						float("{0:.2f}".format(MinVal)), 
+						float("{0:.2f}".format(MaxVal))
+						))
 	return DimensionRead
-
-
-
