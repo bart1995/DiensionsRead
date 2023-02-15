@@ -24,13 +24,12 @@ def dimensions_read(Module7, KompasDocument2D):
 	View = KompasDocument2D.ViewsAndLayersManager.Views.ActiveView
 	ISymbols2DContainer = Module7.ISymbols2DContainer(View)
 	DimensionRead = []
-	Deviations = {
-					'Угол':[ISymbols2DContainer.AngleDimensions.AngleDimension, ISymbols2DContainer.AngleDimensions.Count],
-					'Радиус дуги':[ISymbols2DContainer.ArcDimensions.ArcDimension, ISymbols2DContainer.ArcDimensions.Count],
-					'Диаметр':[ISymbols2DContainer.DiametralDimensions.DiametralDimension, ISymbols2DContainer.DiametralDimensions.Count],
-					'Лин. разм.':[ISymbols2DContainer.LineDimensions.LineDimension, ISymbols2DContainer.LineDimensions.Count],
-					'Радиус круга':[ISymbols2DContainer.RadialDimensions.RadialDimension, ISymbols2DContainer.RadialDimensions.Count],
-				}
+	Deviations = {	'Угол':[ISymbols2DContainer.AngleDimensions.AngleDimension, ISymbols2DContainer.AngleDimensions.Count],
+			'Радиус дуги':[ISymbols2DContainer.ArcDimensions.ArcDimension, ISymbols2DContainer.ArcDimensions.Count],
+			'Диаметр':[ISymbols2DContainer.DiametralDimensions.DiametralDimension, ISymbols2DContainer.DiametralDimensions.Count],
+			'Лин. разм.':[ISymbols2DContainer.LineDimensions.LineDimension, ISymbols2DContainer.LineDimensions.Count],
+			'Радиус круга':[ISymbols2DContainer.RadialDimensions.RadialDimension, ISymbols2DContainer.RadialDimensions.Count],
+			}
 	Number = 0
 	for DimensionType, Dimension in Deviations.items():
 		for i in range(Dimension[1]):
